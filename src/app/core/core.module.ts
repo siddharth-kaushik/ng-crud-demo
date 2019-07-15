@@ -47,6 +47,6 @@ import { ReversePipe } from '@core/pipes/reverse.pipe';
     MaterialModule,
     WellModule
   ],
-  exports: [ProgressComponent, NavbarComponent, FooterComponent, ReversePipe]
+  exports: [ProgressComponent, NavbarComponent, FooterComponent, ReversePipe],
 })
 export class CoreModule {}
