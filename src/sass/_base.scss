@@ -1,0 +1,59 @@
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+  color: var(--heading);
+}
+
+a {
+  color: var(--secondary);
+  font-size: 0.875em;
+  font-weight: 700;
+  text-decoration: none;
+  transition: color var(--time);
+
+  &:hover,
+  &:focus {
+    color: var(--primary);
+  }
+}
+
+// Overriding Material Specs
+// -> Typography
+.mat-display-1 {
+  margin-bottom: 0;
+}
+
+// -> Icon
+mat-icon.mat-icon {
+  stroke: currentColor;
+  width: 1.275em;
+  height: 1.275em;
+}
+
+// -> Buttons
+button.mat-button,
+button.mat-flat-button,
+button.mat-raised-button,
+button.mat-stroked-button {
+  border-radius: var(--corner-radius);
+}
+
+// -> SnackBar
+snack-bar-container.mat-snack-bar-container {
+  color: var(--primary);
+  background-color: var(--white);
+  border-radius: var(--corner-radius);
+  box-shadow: var(--shadow);
+
+  .mat-simple-snackbar-action {
+    color: var(--primary);
+  }
+}
+
+// -> Mat Dialog
+mat-dialog-container.mat-dialog-container {
+  background-color: var(--bg-light-gray);
+}

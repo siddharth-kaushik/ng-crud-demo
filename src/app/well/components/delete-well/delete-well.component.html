@@ -1,0 +1,11 @@
+<h1>{{title}}</h1>
+<p class="mat-subheading-1"
+  [innerHTML]="subTitle"></p>
+  
+<div class="actions">
+  <button mat-button
+    (click)="close()">no</button>
+  <button mat-flat-button
+    color="accent"
+    (click)="delete()">yes</button>
+</div>

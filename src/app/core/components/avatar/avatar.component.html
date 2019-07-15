@@ -1,0 +1,18 @@
+<ng-container *ngIf="user$ | async as user; else loginButtons">
+  <span class="username mat-body-2">Hello, {{user.userName}}</span>
+  <button mat-stroked-button
+    (click)="handleLogout()">Logout</button>
+</ng-container>
+
+<ng-template #loginButtons>
+  <div class="actions">
+    <button mat-button
+      (click)="router.navigate(['/auth'], {
+        queryParams: { new_user: true }
+      })">Register</button>
+    <button mat-stroked-button
+      (click)="router.navigate(['/auth'], {
+        queryParams: { new_user: false }
+      })">Sign In</button>
+  </div>
+</ng-template>

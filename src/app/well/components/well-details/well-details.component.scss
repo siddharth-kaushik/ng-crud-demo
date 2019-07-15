@@ -1,0 +1,22 @@
+:host {
+  display: grid;
+  grid-template-rows: 72px 1fr;
+  place-items: start stretch;
+
+  .list-container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-gap: 20px;
+    align-content: start;
+    color: var(--primary);
+    background-color: var(--bg-blue);
+    border-radius: var(--corner-radius);
+    padding: 20px;
+    z-index: 0;
+
+    .name,
+    .depth {
+      grid-column: span 2;
+    }
+  }
+}

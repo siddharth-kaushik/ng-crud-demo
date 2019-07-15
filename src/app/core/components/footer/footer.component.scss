@@ -1,0 +1,21 @@
+:host {
+  display: grid;
+  place-content: center;
+
+  padding: 48px 16px;
+  margin-top: 64px;
+
+  span.border {
+    display: inline-block;
+    width: 64px;
+    height: 4px;
+    background-color: var(--light-gray);
+    opacity: 0.5;
+    margin-bottom: 64px;
+  }
+
+  span {
+    place-self: center;
+    text-align: center;
+  }
+}

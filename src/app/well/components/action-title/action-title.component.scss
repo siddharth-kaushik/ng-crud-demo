@@ -1,0 +1,44 @@
+:host {
+  position: sticky;
+  top: 0;
+  display: flex;
+  color: var(--gray);
+  background-color: var(--white);
+  padding: 20px;
+  z-index: 1;
+
+  .title {
+    margin-bottom: 0;
+    margin-right: 16px;
+  }
+
+  .value {
+    display: grid;
+    place-content: center;
+    width: 32px;
+    height: 32px;
+    font-weight: 700;
+    border-radius: 100%;
+    background-color: var(--bg-cream);
+  }
+
+  .total {
+    display: grid;
+    place-items: center;
+    width: 32px;
+    height: 32px;
+    color: var(--light-gray);
+    font-weight: 700;
+  }
+
+  .action {
+    display: inline-grid;
+    place-items: center;
+    color: var(--blue);
+    margin-left: auto;
+    display: grid;
+    grid-template-columns: 20px 1fr;
+    grid-gap: 8px;
+    place-content: center;
+  }
+}

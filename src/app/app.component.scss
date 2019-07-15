@@ -1,0 +1,15 @@
+:host {
+  position: relative;
+
+  .page,
+  app-navbar,
+  app-footer {
+    z-index: 1;
+  }
+
+  .page {
+    max-width: var(--width);
+    margin: 0 auto;
+    padding: 0 16px;
+  }
+}

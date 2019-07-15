@@ -1,0 +1,49 @@
+$app-blue: (
+  50: #e0f3fa,
+  100: #b1e1f1,
+  200: #80cde8,
+  300: #53b9df,
+  400: #34abda,
+  500: #199dd5,
+  600: #1290c7,
+  700: #087eb4,
+  800: #076da1,
+  900: #004e7f,
+  contrast: (
+    50: $black-87-opacity,
+    100: $black-87-opacity,
+    200: $black-87-opacity,
+    300: $black-87-opacity,
+    400: $black-87-opacity,
+    500: white,
+    600: white,
+    700: white,
+    800: $white-87-opacity,
+    900: $white-87-opacity
+  )
+);
+
+$app-gray: (
+  50: #fdfdfd,
+  100: #f8f8f8,
+  200: #f3f3f3,
+  300: #eeeeee,
+  400: #cecece,
+  500: #b1b1b1,
+  600: #868686,
+  700: #717171,
+  800: #515151,
+  900: #2f2f2f,
+  contrast: (
+    50: $black-87-opacity,
+    100: $black-87-opacity,
+    200: $black-87-opacity,
+    300: $black-87-opacity,
+    400: $black-87-opacity,
+    500: $black-87-opacity,
+    600: white,
+    700: white,
+    800: $white-87-opacity,
+    900: $white-87-opacity
+  )
+);

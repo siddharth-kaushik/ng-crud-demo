@@ -1,0 +1,13 @@
+<h1>{{title}}</h1>
+<p class="mat-subheading-1"
+  [innerHTML]="subTitle"></p>
+
+<app-well-form></app-well-form>
+
+<div class="actions">
+  <button mat-button
+    (click)="close()">cancel</button>
+  <button mat-flat-button
+    color="accent"
+    (click)="add()">create</button>
+</div>

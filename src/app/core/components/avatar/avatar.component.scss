@@ -1,0 +1,11 @@
+.username {
+  display: inline-block;
+  margin-right: 16px;
+}
+
+.actions {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-gap: 16px;
+  align-items: center;
+}

@@ -1,0 +1,60 @@
+:host {
+  position: relative;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  color: var(--gray);
+  // background-color: var(--bg-orange);
+  background-color: #F5F9FA;
+  border-radius: var(--corner-radius);
+  padding: 20px;
+  padding-left: 25px;
+  cursor: pointer;
+  overflow: hidden;
+
+  &.Update {
+    color: #28a2da;
+    background-color: var(--bg-blue);
+  }
+  &.Delete {
+    color: var(--gray);
+    background-color: var(--bg-light-gray);
+  }
+  &.Add {
+    color: #17b2bd;
+    background-color: #ECF9FC;
+  }
+
+
+  // &::before {
+  //   position: absolute;
+  //   top: 0;
+  //   left: 0;
+  //   bottom: 0;
+  //   content: '';
+  //   width: 5px;
+  //   height: 100%;
+  //   background-color: var(--bg-light-gray);
+  //   transition: background-color var(--time);
+  // }
+
+  // &.Add:hover::before {
+  //   background-color: #3CDBE1;
+  // }
+  // &.Add::before {
+  //   background-color: #D9F3F9;
+  // }
+
+  // &.Update:hover::before {
+  //   background-color: #FBBE63;
+  // }
+  // &.Update::before {
+  //   background-color: #F6EFE4;
+  // }
+
+  // &.Delete:hover::before {
+  //   background-color: var(--red);
+  // }
+  // &.Delete::before {
+  //   background-color: var(--bg-red);
+  // }
+}

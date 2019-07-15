@@ -1,0 +1,4 @@
+<app-hero [data]="content"></app-hero>
+<app-well-list [list]="wells$ | async"></app-well-list>
+<app-well-details [well]="selectedWell$ | async"></app-well-details>
+<app-well-history [changes]="changeHistory$ | async | reverse"></app-well-history>

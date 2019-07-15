@@ -1,0 +1,10 @@
+<app-action-title [title]="title"
+  [value]="changes?.length"
+  [icon]="'delete'"
+  (action)="handleAction($event)"></app-action-title>
+
+<div class="list-container">
+  <app-well-history-item *ngFor="let change of changes"
+    [className]="change.action"
+    [item]="change"></app-well-history-item>
+</div>

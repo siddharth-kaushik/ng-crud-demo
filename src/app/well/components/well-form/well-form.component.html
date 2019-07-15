@@ -1,0 +1,88 @@
+<div class="form"
+  [formGroup]="form">
+  <div class="field-wrapper">
+    <label>{{label.uwid | titlecase}}</label>
+    <mat-form-field>
+      <input matInput
+        formControlName="uwid"
+        [placeholder]="placeholder.uwid" />
+      <mat-error *ngIf="form.get('uwid').hasError('required')">
+        Unique Well ID is <strong>required</strong>
+      </mat-error>
+    </mat-form-field>
+  </div>
+
+  <div class="field-wrapper">
+    <label>{{label.status | titlecase}}</label>
+    <mat-form-field>
+      <input matInput
+        formControlName="status"
+        [placeholder]="placeholder.status" />
+    </mat-form-field>
+  </div>
+
+  <div class="field-wrapper">
+    <label>{{label.wellName | titlecase}}</label>
+    <mat-form-field>
+      <input matInput
+        formControlName="wellName"
+        [placeholder]="placeholder.wellName" />
+      <mat-error *ngIf="form.get('wellName').hasError('required')">
+        Well name cannot be <strong>empty</strong>
+      </mat-error>
+    </mat-form-field>
+  </div>
+
+  <div class="field-wrapper">
+    <label>{{label.totalDepth | titlecase}}</label>
+    <mat-form-field>
+      <input matInput
+        type="number"
+        min="0"
+        step="10"
+        value=""
+        formControlName="totalDepth"
+        [placeholder]="placeholder.totalDepth" />
+    </mat-form-field>
+  </div>
+
+  <div class="field-wrapper">
+    <label>{{label.licenseNumber | titlecase}}</label>
+    <mat-form-field>
+      <input matInput
+        formControlName="licenseNumber"
+        [placeholder]="placeholder.licenseNumber" />
+    </mat-form-field>
+  </div>
+
+  <div class="field-wrapper">
+    <label>{{label.drillDate | titlecase}}</label>
+    <mat-form-field>
+      <input matInput
+        [matDatepicker]="picker"
+        formControlName="drillDate"
+        [placeholder]="placeholder.drillDate" />
+      <mat-datepicker-toggle matSuffix
+        [for]="picker"></mat-datepicker-toggle>
+      <mat-datepicker #picker></mat-datepicker>
+    </mat-form-field>
+  </div>
+
+  <div class="field-wrapper">
+    <label>{{label.area | titlecase}}</label>
+    <mat-form-field>
+      <input matInput
+        formControlName="area"
+        [placeholder]="placeholder.area" />
+    </mat-form-field>
+  </div>
+
+  <div class="field-wrapper">
+    <label>{{label.field | titlecase}}</label>
+    <mat-form-field>
+      <input matInput
+        formControlName="field"
+        [placeholder]="placeholder.field" />
+    </mat-form-field>
+  </div>
+</div>

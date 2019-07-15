@@ -1,0 +1,19 @@
+mat-toolbar {
+  height: 120px;
+  max-width: var(--width);
+  background-color: var(--white);
+  margin: 0 auto;
+
+  a {
+    display: grid;
+    grid-template-columns: 24px 1fr;
+    align-items: center;
+    grid-gap: 8px;
+    color: var(--primary);
+    text-decoration: none;
+  }
+
+  app-avatar {
+    margin-left: auto;
+  }
+}

@@ -1,0 +1,7 @@
+<span class="key mat-body-2">{{key | titlecase}}</span>
+<span *ngIf="unit"
+  class="value mat-subheading-1">
+  <span>{{value || '0'}}</span>&nbsp;
+  <span>{{unit}}</span>
+</span>
+<span *ngIf="!unit" class="value mat-subheading-1">{{value || '-'}}</span>

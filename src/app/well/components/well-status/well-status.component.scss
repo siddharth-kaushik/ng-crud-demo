@@ -1,0 +1,30 @@
+span {
+  display: inline-grid;
+  place-content: center;
+  color: var(--gray);
+  background-color: var(--bg-gray);
+  font-size: 0.875em;
+  font-weight: 700;
+  letter-spacing: 1px;
+  padding: 2px 6px;
+}
+
+.active {
+  color: var(--green);
+  background-color: var(--bg-green);
+}
+
+.inactive {
+  color: var(--gray);
+  background-color: var(--bg-gray);
+}
+
+.dead {
+  color: var(--red);
+  background-color: var(--bg-red);
+}
+
+.production {
+  color: var(--yellow);
+  background-color: var(--bg-yellow);
+}

@@ -1,0 +1,36 @@
+:host {
+  display: grid;
+  grid-template-columns: repeat(12, 1fr);
+  place-items: center;
+  background-color: var(--bg-light-gray);
+  border-radius: var(--corner-radius);
+  padding: 48px;
+  margin: 0 0 48px;
+
+  .intro {
+    grid-column: 2 / span 4;
+
+    h1 {
+      color: var(--primary);
+    }
+
+    p {
+      color: var(--gray);
+      margin-top: 16px;
+      margin-bottom: 32px;
+    }
+
+    a {
+      display: inline-grid;
+      color: var(--blue);
+      grid-template-columns: 1fr 1.275em;
+      grid-gap: 8px;
+      align-items: baseline;
+    }
+  }
+
+  img {
+    grid-column: 8 / span 2;
+    max-width: 180px;
+  }
+}

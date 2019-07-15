@@ -1,0 +1,26 @@
+{
+  "hero": {
+    "title": "Well Management System",
+    "description": "Let us help manage your wells.<br>Get rid of excel sheets and manage different versions of your wells with ease.",
+    "image": {
+      "src": "https://assets.website-files.com/5bfd1275cc56e15ce750b18e/5d0521f085f49b795da43c88_7.png",
+      "alt": "Well management system hero image"
+    },
+    "link": {
+      "url": "https://www.mcdan.com/about-us",
+      "text": "Learn more"
+    }
+  },
+  "pageNotFound": {
+    "title": "Sorry.",
+    "description": "Looks like something went wrong.<br>We couldn't find the page you're looking for.",
+    "image": {
+      "src": "https://assets.website-files.com/5bfd1275cc56e15ce750b18e/5d0521f085f49b637ba43c8e_22.png",
+      "alt": "Page not found"
+    },
+    "link": {
+      "url": "/",
+      "text": "Go back to Homepage."
+    }
+  }
+}
