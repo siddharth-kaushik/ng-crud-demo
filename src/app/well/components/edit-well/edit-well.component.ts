@@ -23,7 +23,7 @@ export class EditWellComponent {
   title = 'Edit the well';
   subTitle = 'Some description for editing well details.';
 
-  @ViewChild(WellFormComponent, { static: false })
+  @ViewChild(WellFormComponent)
   formComponent: WellFormComponent;
 
   constructor(private uiService: UIService, private wellService: WellService) {}

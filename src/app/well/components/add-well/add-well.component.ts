@@ -16,7 +16,7 @@ export class AddWellComponent {
   subTitle =
     'Fill out the details to create new well. Unique well identifier and name for the well are required.';
 
-  @ViewChild(WellFormComponent, { static: false })
+  @ViewChild(WellFormComponent)
   formComponent: WellFormComponent;
 
   constructor(private uiService: UIService, private wellService: WellService) {}
