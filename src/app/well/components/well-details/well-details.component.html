@@ -1,30 +1,35 @@
-<app-action-title [title]="title"
+<app-action-title
+  [title]="title"
   [icon]="'edit'"
-  (action)="handleAction($event)"></app-action-title>
+  (action)="handleAction($event)"
+></app-action-title>
 
 <div class="list-container" *ngIf="well">
-  <app-well-text [key]="props.uwid"
-    [value]="well.uwid"></app-well-text>
-  <app-well-text [key]="props.status"
-    [value]="well.status"></app-well-text>
+  <app-well-text [key]="props.uwid" [value]="well.uwid"></app-well-text>
+  <app-well-text [key]="props.status" [value]="well.status"></app-well-text>
 
-  <app-well-text class="name"
+  <app-well-text
+    class="name"
     [key]="props.wellName"
-    [value]="well.wellName"></app-well-text>
+    [value]="well.wellName"
+  ></app-well-text>
 
-  <app-well-text [key]="props.licenseNumber"
-    [value]="well.licenseNumber"></app-well-text>
-  <app-well-text [key]="props.drillDate"
-    [value]="(formatDate(well.drillDate) | date:'MMM dd, yyyy')"></app-well-text>
+  <app-well-text
+    [key]="props.licenseNumber"
+    [value]="well.licenseNumber"
+  ></app-well-text>
+  <app-well-text
+    [key]="props.drillDate"
+    [value]="formatDate(well.drillDate) | date: 'MMM dd, yyyy'"
+  ></app-well-text>
 
-  <app-well-text class="depth"
+  <app-well-text
+    class="depth"
     [key]="props.totalDepth"
     [value]="well.totalDepth"
-    [unit]="'m'"></app-well-text>
+    [unit]="'m'"
+  ></app-well-text>
 
-  <app-well-text [key]="props.area"
-    [value]="well.area"></app-well-text>
-  <app-well-text [key]="props.field"
-    [value]="well.field"></app-well-text>
-
+  <app-well-text [key]="props.area" [value]="well.area"></app-well-text>
+  <app-well-text [key]="props.field" [value]="well.field"></app-well-text>
 </div>

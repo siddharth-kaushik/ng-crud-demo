@@ -1,14 +1,9 @@
-<h2 class="title mat-headline">{{title}}</h2>
+<h2 class="title mat-headline">{{ title }}</h2>
 
-<span class="value"
-  *ngIf="value">{{value | number:'2.0-0'}}</span>
-<span class="total"
-  *ngIf="total">/{{total}}</span>
+<span class="value" *ngIf="value">{{ value | number: '2.0-0' }}</span>
+<span class="total" *ngIf="total">/{{ total }}</span>
 
-<a *ngIf="user$ | async"
-  class="action"
-  href
-  (click)="handleAction($event)">
+<a *ngIf="user$ | async" class="action" href (click)="handleAction($event)">
   <mat-icon [svgIcon]="icon"></mat-icon>
-  <span>{{icon | titlecase}}</span>
+  <span>{{ icon | titlecase }}</span>
 </a>

@@ -1,8 +1,6 @@
-<h1 class="mat-display-1">{{content.title}}</h1>
-<p class="mat-subheading-1"
-  [innerHTML]="content.description"></p>
-<button mat-button
-  color="warn"
-  [routerLink]="content.link.url">{{content.link.text}}</button>
-<img [src]="content.image.src"
-  [alt]="content.image.alt">
+<h1 class="mat-display-1">{{ content.title }}</h1>
+<p class="mat-subheading-1" [innerHTML]="content.description"></p>
+<button mat-button color="warn" [routerLink]="content.link.url">
+  {{ content.link.text }}
+</button>
+<img [src]="content.image.src" [alt]="content.image.alt" />

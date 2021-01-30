@@ -1,7 +1,11 @@
 <mat-toolbar>
   <a routerLink="/">
-    <mat-icon svgIcon="logo"></mat-icon>
-    <span>{{brand.name}}</span>
+    <mat-icon
+      [svgIcon]="brand.logo"
+      aria-hidden="false"
+      aria-label="Company Logo"
+    ></mat-icon>
+    <span>{{ brand.name }}</span>
   </a>
   <app-avatar></app-avatar>
 </mat-toolbar>

@@ -8,7 +8,7 @@ import { MatToolbarModule } from '@angular/material/toolbar';
 import { MatDatepickerModule } from '@angular/material/datepicker';
 import {
   MAT_FORM_FIELD_DEFAULT_OPTIONS,
-  MatFormFieldModule
+  MatFormFieldModule,
 } from '@angular/material/form-field';
 import { MatInputModule } from '@angular/material/input';
 import { MatSelectModule } from '@angular/material/select';
@@ -17,10 +17,7 @@ import { MatListModule } from '@angular/material/list';
 
 import { MatBadgeModule } from '@angular/material/badge';
 import { MatButtonModule } from '@angular/material/button';
-import {
-  MAT_LABEL_GLOBAL_OPTIONS,
-  MatRippleModule
-} from '@angular/material/core';
+import { MatRippleModule } from '@angular/material/core';
 import { MatIconModule } from '@angular/material/icon';
 import { MatProgressBarModule } from '@angular/material/progress-bar';
 import { MatProgressSpinnerModule } from '@angular/material/progress-spinner';
@@ -46,7 +43,7 @@ const COMPONENTS = [
   MatRippleModule,
   MatBottomSheetModule,
   MatDialogModule,
-  MatSnackBarModule
+  MatSnackBarModule,
 ];
 
 @NgModule({
@@ -56,12 +53,8 @@ const COMPONENTS = [
     MatDatepickerModule,
     {
       provide: MAT_FORM_FIELD_DEFAULT_OPTIONS,
-      useValue: { appearance: 'fill' }
+      useValue: { appearance: 'fill', floatLabel: 'always' },
     },
-    {
-      provide: MAT_LABEL_GLOBAL_OPTIONS,
-      useValue: { float: 'always' }
-    }
-  ]
+  ],
 })
 export class MaterialModule {}

@@ -1,27 +1,29 @@
-<h3 class="title mat-headline">{{title}}</h3>
-<p class="subtitle mat-subheading-1">{{subTitle}}</p>
+<h3 class="title mat-headline">{{ title }}</h3>
+<p class="subtitle mat-subheading-1">{{ subTitle }}</p>
 
-<form [formGroup]="form"
-  novalidate>
+<form [formGroup]="form" novalidate>
   <mat-form-field>
-    <input matInput
-      formControlName="username"
-      placeholder="Username" />
-      <mat-error *ngIf="form.get('username').hasError('required')">
-        Username is <strong>required</strong>
-      </mat-error>
+    <mat-label>Username</mat-label>
+    <input matInput formControlName="username" placeholder="Username" />
+    <mat-error *ngIf="form.get('username').hasError('required')">
+      Username is <strong>required</strong>
+    </mat-error>
   </mat-form-field>
+
   <mat-form-field>
-    <input matInput
+    <mat-label>Password</mat-label>
+    <input
+      matInput
       formControlName="password"
       type="password"
-      placeholder="Password" />
-      <mat-error *ngIf="form.get('password').hasError('required')">
-        Password cannot be <strong>empty</strong>
-      </mat-error>
+      placeholder="Password"
+    />
+    <mat-error *ngIf="form.get('password').hasError('required')">
+      Password cannot be <strong>empty</strong>
+    </mat-error>
   </mat-form-field>
 
-  <button mat-flat-button
-    color="accent"
-    (click)="handleAction()">{{actionText}}</button>
+  <button mat-flat-button color="accent" (click)="handleAction()">
+    {{ actionText }}
+  </button>
 </form>

@@ -1,4 +1,4 @@
 <app-well-status [code]="getStatusCode()"></app-well-status>
-<span class="uwid mat-body-strong">{{(well.uwid || '-') | uppercase}}</span>
-<h3 class="title mat-title">{{(well.wellName || '-') | titlecase}}</h3>
+<span class="uwid mat-body-strong">{{ well.uwid || '-' | uppercase }}</span>
+<h3 class="title mat-title">{{ well.wellName || '-' | titlecase }}</h3>
 <mat-icon svgIcon="arrow-right"></mat-icon>

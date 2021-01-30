@@ -1,13 +1,16 @@
-<app-action-title [title]="title"
+<app-action-title
+  [title]="title"
   [value]="selectedIndex + 1"
   [total]="list?.length"
   [icon]="icon"
-  (action)="handleAction($event)"></app-action-title>
+  (action)="handleAction($event)"
+></app-action-title>
 
 <div class="list">
   <app-well-list-item
     *ngFor="let item of list; index as i"
     [class.active]="i === selectedIndex"
     [well]="item"
-    (click)="selectWell(item, i)"></app-well-list-item>
+    (click)="selectWell(item, i)"
+  ></app-well-list-item>
 </div>

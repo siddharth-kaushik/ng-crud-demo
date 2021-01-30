@@ -7,7 +7,7 @@ import { Brand } from '@models/brand.model';
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
-  styleUrls: ['./app.component.scss']
+  styleUrls: ['./app.component.scss'],
 })
 export class AppComponent implements OnInit {
   icons = [
@@ -19,30 +19,27 @@ export class AppComponent implements OnInit {
     'logo',
     'location',
     'sign-in',
-    'sign-out'
+    'sign-out',
   ];
 
   company: Brand = {
     name: 'XYZ Corporation',
-    logo: 'logo.svg'
+    logo: 'logo',
   };
 
   constructor(
     private iconRegistry: MatIconRegistry,
-    private sanitizer: DomSanitizer
+    private domSanitizer: DomSanitizer,
   ) {}
 
-  ngOnInit(): void {
-    this.registerSVGIcons();
-  }
-
-  registerSVGIcons() {
+  ngOnInit() {
+    // Register SVG Icons
     for (const icon of this.icons) {
       this.iconRegistry.addSvgIcon(
         icon,
-        this.sanitizer.bypassSecurityTrustResourceUrl(
-          `assets/images/${icon}.svg`
-        )
+        this.domSanitizer.bypassSecurityTrustResourceUrl(
+          `../assets/images/${icon}.svg`,
+        ),
       );
     }
   }

@@ -1,12 +1,9 @@
 <div class="intro">
-  <h1 class="mat-display-1">{{data.title}}</h1>
-  <p class="mat-subheading-2"
-    [innerHTML]="data.description"></p>
-  <a target="_blank"
-    [href]="data.link.url">
-    <span class="mat-body-strong">{{data.link.text}}</span>
+  <h1 class="mat-display-1">{{ data.title }}</h1>
+  <p class="mat-subheading-2" [innerHTML]="data.description"></p>
+  <a target="_blank" [href]="data.link.url">
+    <span class="mat-body-strong">{{ data.link.text }}</span>
     <mat-icon svgIcon="link"></mat-icon>
   </a>
 </div>
-<img [src]="data.image.src"
-  [alt]="data.image.alt" />
+<img [src]="data.image.src" [alt]="data.image.alt" />

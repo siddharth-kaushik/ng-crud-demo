@@ -8,7 +8,7 @@ import { Component } from '@angular/compiler/src/core';
 import { BehaviorSubject, EMPTY } from 'rxjs';
 
 @Injectable({
-  providedIn: 'root'
+  providedIn: 'root',
 })
 export class UIService {
   private dialogRef: MatDialogRef<any>;
@@ -21,7 +21,7 @@ export class UIService {
     console.log(message);
     this.snackBar.open(message, 'Dismiss', {
       duration,
-      horizontalPosition: 'start'
+      horizontalPosition: 'start',
     });
   }
 
@@ -46,6 +46,9 @@ export class UIService {
   }
 
   closeDialog() {
+    if (!this.dialogRef) {
+      return;
+    }
     this.dialogRef.close();
   }
 }
